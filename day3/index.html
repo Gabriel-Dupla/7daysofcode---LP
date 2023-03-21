@@ -1,0 +1,41 @@
+<script>
+const carreira = prompt("Qual área da programação deseja trilhar? para Front-end digite front e para Back-end digite back.")
+
+let linguagem = "";
+
+if (carreira === "front") {
+     linguagem = prompt("Cringe, porém React ou Vue?");
+
+} else if (carreira === "back"){
+     linguagem = prompt("Seus cabelos cairam, vai para Java ou C#?");
+
+} else {
+    alert("Essa não é uma área válida");
+
+}
+
+const semVida = prompt("Vai se especializar como fullstack ou ficar pobre? Digite fullstack ou pobre.");
+
+if (semVida === "fullstack") {
+    alert("Faz por amor sim, a gente acredita. 💵")
+
+} else if (semVida === "pobre") {
+    alert("Codifique enquanto eles dormem.");
+
+} else {
+    alert("Leia again");
+
+}
+
+
+let falaMuito = prompt("Digite abaixo as linguagens de programação que gostaria de aprender?");
+
+while (falaMuito === "ok") {
+    let novaTecnologia = prompt("Qual?");
+    alert(`${novaTecnologia} é realmente uma tecnologia muito legal!`)
+    falaMuito = prompt("Tem mais alguma tecnologia que você gostaria de aprender? Digite 'ok' em caso positivo.");
+}
+
+
+
+</script>
