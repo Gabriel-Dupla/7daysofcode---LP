@@ -1,0 +1,43 @@
+<script>
+let frutas = [];
+let laticinios = [];
+let doces = [];
+let congelados = [];
+let comida = '';
+let categoria = '';
+
+// lista.push(novoItem);
+
+
+const iniciar = prompt('Você gostaria de adicionar uma comida na sua lista de compras? Digite "sim" ou "não".');
+// console.log(iniciar);
+
+if (iniciar == 'sim') {
+    comida = prompt('Qual comida deseja adicionar?')
+    // console.log(novoItem);
+    categoria = prompt("Qual categoria deseja adicionar: 'frutas', 'laticinios', 'congelados', 'doces'?")
+    
+    if (categoria === 'frutas') {
+        frutas.push(comida);
+
+    } else if (categoria === 'laticinios') {
+        laticinios.push(comida)
+
+    } else if (categoria === 'congelados') {
+        congelados.push(comida);
+
+    } else if (categoria === 'doces') {
+        doces.push(comida);
+
+    } else {
+        alert("Categoria não existente.");
+
+    }
+}
+
+alert(`Lista de compras:\n  Frutas: ${frutas}\n  Laticínios: ${laticinios}\n  Doces: ${doces}\n  Congelados: ${congelados}`);
+
+
+
+
+</script>
