@@ -1,0 +1,36 @@
+<script>
+    let operacao = prompt("Bem vindo. Qual cálculo deseja fazer? 'multiplica', 'soma', 'divisao' ou'sair'");
+
+    let primeiroNumero = prompt("Digite o primeiro número da sua operação");
+
+    let segundoNumero = prompt("Digite o segundo número da sua operação");
+    
+    
+    function multiplica(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) * Number(segundoNumero);;
+    }
+
+    function soma(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) + Number(segundoNumero);
+    }
+
+    function divisao(primeiroNumero, segundoNumero) {
+        return Number(primeiroNumero) / Number(segundoNumero);
+    }
+
+
+    if (operacao === "soma") {
+        var calculo = soma(primeiroNumero, segundoNumero);
+        var resultado = alert("Seu resultado é " + calculo);
+    } else if (operacao === "multiplica") {
+        var calculo = multiplica(primeiroNumero, segundoNumero);
+        var resultado = alert("Seu resultado é " + calculo);
+    } else if (operacao === "divisao") {
+        var calculo = divisao(primeiroNumero, segundoNumero);
+        var resultado = alert("Seu resultado é " + calculo);
+    } else {
+        alert("Bye bye");
+
+    }
+
+</script>
